@@ -1,0 +1,16 @@
+hero;
+background-position: center;
+padding:120px 0;c.hero{
+background-image: url('../images/banner.jpg');
+background-siz
+}
+
+.hero h1{
+font-size:48px;
+font-weight:bold;
+}
+
+.card img{
+height:300px;
+object-fit:cover;
+}
