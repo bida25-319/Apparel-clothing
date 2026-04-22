@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Apparel Store</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .item {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .item:hover {
+            transform: scale(1.05);
+        }
+
+        .item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .item-info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .item-info h3 {
+            margin: 10px 0 5px;
+        }
+
+        .price {
+            color: green;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #000;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Apparel Store</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="product.html">Products</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="gallery">
+
+    <div class="item">
+        <img src="https://www.nike.com/t/tech-mens-fleece-oversized-hoodie-7F4xX5/HV6535-010" alt="Hoodie">
+        <div class="item-info">
+            <h3>Black Hoodie</h3>
+            <p class="price">P60</p>
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="https://www.purewow.com/fashion/best-winter-jackets-for-extreme-cold" alt="Jacket">
+        <div class="item-info">
+            <h3>Winter Jacket</h3>
+            <p class="price">P100</p>
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="https://www.next.co.uk/style/st056123/c39409" alt="T-shirts"
+        <div class="item-info">
+            <h3>White T-Shirt</h3>
+            <p class="price">P25</p>
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="https://createfashionbrand.com/product/hoodie-oversize-grey/" alt="Hoodie">
+        <div class="item-info">
+            <h3>Grey Hoodie</h3>
+            <p class="price">P100</p>
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="https://www.amazon.com/VOEERON-Jean-Jacket-Men-Denim/dp/B09XTKR323" alt="Jacket">
+        <div class="item-info">
+            <h3>Denim Jacket</h3>
+            <p class="price">P300</p>
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="https://www.amazon.com/Weiyuqi-Oversized-Graphic-Vintage-Streetwear/dp/B0D97JGS2G" alt="T-Shirt">
+        <div class="item-info">
+            <h3>Graphic T-Shirt</h3>
+            <p class="price">P250</p>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    <p>&copy; 2026 Apparel Store. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
