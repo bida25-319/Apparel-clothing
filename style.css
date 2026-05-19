@@ -10,12 +10,13 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
     color: #333;
+    line-height: 1.6;
 }
 
-/* ===== HEADER / NAVBAR -----*/
+/* ===== HEADER / NAVBAR ===== */
 header {
     background: #000;
-    color: #fff;
+    color: #5f102100;
     padding: 15px 0;
 }
 
@@ -27,25 +28,24 @@ nav {
     align-items: center;
 }
 
-nav h1 {
-    font-size: 26px;
-    letter-spacing: 2px;
+/* LOGO */
+.logo img {
+    width: 30px;
+    height: auto;
 }
 
+/* NAV LINKS */
 nav ul {
     list-style: none;
     display: flex;
-}
-
-nav ul li {
-    margin-left: 25px;
+    gap: 20px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #fff;
     font-size: 16px;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 nav ul li a:hover {
@@ -55,10 +55,11 @@ nav ul li a:hover {
 /* ===== HERO SECTION ===== */
 .hero {
     background: url('images/banner.jpg') no-repeat center/cover;
-    height: 400px;
+    min-height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .hero h2 {
@@ -84,8 +85,13 @@ nav ul li a:hover {
     border-radius: 10px;
     padding: 15px;
     text-align: center;
-    transition: 0.3s;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
 .product img {
@@ -111,7 +117,7 @@ nav ul li a:hover {
     margin: 8px 0;
 }
 
-/* ===== BUTTON ===== */
+/* BUTTON */
 .product button {
     padding: 10px 15px;
     border: none;
@@ -126,12 +132,7 @@ nav ul li a:hover {
     background: #f39c12;
 }
 
-/* ===== HOVER EFFECT ===== */
-.product:hover {
-    transform: translateY(-8px);
-}
-
-/* ===== GALLERY PAGE ===== */
+/* ===== GALLERY ===== */
 .gallery {
     width: 90%;
     margin: 40px auto;
@@ -145,7 +146,7 @@ nav ul li a:hover {
     height: 220px;
     object-fit: cover;
     border-radius: 10px;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 .gallery img:hover {
@@ -169,6 +170,13 @@ nav ul li a:hover {
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
+    transition: 0.3s;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    outline: none;
+    border-color: #f39c12;
 }
 
 .contact button {
@@ -178,6 +186,7 @@ nav ul li a:hover {
     background: black;
     color: white;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .contact button:hover {
@@ -197,10 +206,13 @@ footer {
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
+        text-align: center;
     }
 
     nav ul {
+        flex-direction: column;
         margin-top: 10px;
+        gap: 10px;
     }
 
     .hero h2 {
